@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro section with dropdown navigation</title>
+  <!-- Google Fonts: Epilogue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <a href="#" class="logo-link">
+      <img src="./assets/images/logo.svg" alt="snap's logo" class="logo">
+    </a>
+
+    <!-- Hamburger Menu Icon for Mobile -->
+    <img src="./assets/images/icon-menu.svg" alt="Open menu" class="open-menu" role="button" tabindex="0">
+
+    <!-- Navigation Drawer -->
+    <nav>
+      <!-- Close Icon for Mobile -->
+      <img src="./assets/images/icon-close-menu.svg" alt="Close menu" class="close-menu" role="button" tabindex="0">
+
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li class="nav-link dropdown">
+          <button type="button" class="dropdown-btn" aria-expanded="false">
+            Features
+            <img src="./assets/images/icon-arrow-down.svg" alt="" class="arrow-icon">
+          </button>
+          <ul class="dropdown-list">
+            <li class="dropdown-link" aria-label="todo-list">
+              <a href="#" aria-label="todo-list">
+                <img src="./assets/images/icon-todo.svg" alt="" aria-hidden="true">
+                <span>Todo List</span>
+              </a>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">
+                <img src="./assets/images/icon-calendar.svg" alt="" aria-hidden="true">
+                <span>Calendar</span>
+              </a>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">
+                <img src="./assets/images/icon-reminders.svg" alt="" aria-hidden="true">
+                <span>Reminders</span>
+              </a>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">
+                <img src="./assets/images/icon-planning.svg" alt="" aria-hidden="true">
+                <span>Planning</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-link dropdown">
+          <button type="button" class="dropdown-btn" aria-expanded="false">
+            Company
+            <img src="./assets/images/icon-arrow-down.svg" alt="" class="arrow-icon">
+          </button>
+          <ul class="dropdown-list">
+            <li class="dropdown-link">
+              <a href="#">History</a>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">Our Team</a>
+            </li>
+            <li class="dropdown-link">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">Careers</a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#">About</a>
+        </li>
+      </ul>
+
+      <!-- Registration / Authentication Buttons -->
+      <div class="registration">
+        <button type="button" class="login-btn">Login</button>
+        <button type="button" class="register-btn">Register</button>
+      </div>
+    </nav>
+
+    <!-- Background Overlay for Mobile Menu -->
+    <div class="overlay"></div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main>
+    <div class="hero-container">
+      <!-- Text Content -->
+      <div class="text-content">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button type="button" class="cta-btn">Learn more</button>
+        <!-- Client Logos -->
+        <div class="clients">
+          <img src="./assets/images/client-databiz.svg" alt="Databiz client logo">
+          <img src="./assets/images/client-audiophile.svg" alt="Audiophile client logo">
+          <img src="./assets/images/client-meet.svg" alt="Meet client logo">
+          <img src="./assets/images/client-maker.svg" alt="Maker client logo">
+        </div>
+      </div>
+
+      <!-- Responsive Hero Image -->
+      <picture>
+        <source media="(min-width: 768px)" srcset="./assets/images/image-hero-desktop.png">
+        <img src="./assets/images/image-hero-mobile.png" alt="Man working on a laptop with geometric shapes in background">
+      </picture>
+    </div>
+  </main>
+
+  <!-- Footer Attribution -->
+  <footer class="attribution">
+    Challenge by <a href="https://crio.do" target="_blank" rel="noopener noreferrer">Crio.do</a>.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
